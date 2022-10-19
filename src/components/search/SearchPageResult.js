@@ -15,7 +15,7 @@ let [filter,setFilter]=useState({meal_type:meal_id});
   
   let getLocationList = async () => {
     try {
-      let response = await axios.get("http://localhost:5003/api/get-location");
+      let response = await axios.get(" https://zomoto-api-app.herokuapp.com/api/get-location");
       let data = response.data;
       if (data.status === true) {
         setLocationList([...data.result]);
@@ -30,7 +30,7 @@ let [filter,setFilter]=useState({meal_type:meal_id});
 
   let filterOpration = async(filter)=>{
    
-    let URL = 'http://localhost:5003/api/filter';
+    let URL = ' https://zomoto-api-app.herokuapp.com/api/filter';
     
     try{
    let {data} =await axios.post(URL,filter);
