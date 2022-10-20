@@ -119,7 +119,7 @@ function Header(props) {
                               <div>
                                 <button className="btn text-white " data-bs-toggle="modal" data-bs-target="#google-sign-in">Login</button>
                                 <button className="btn btn-outline-light">
-                                  <i className="fa fa-search" aria-hidden="true"></i>Create a
+                                  Create a
                                   Account
                                 </button>  
                               </div>
