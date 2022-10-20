@@ -104,10 +104,12 @@ function Header(props) {
 
           <div className={"row justify-content-center "+ props.color}>
         <div className="col-10 d-flex justify-content-between py-2">
-          <p className="m-0 brand hand "onClick={()=>navigate("/")}>e!</p>
+          
+          <p className="m-0 brand hand " onClick={()=>navigate("/")} >e!</p>
+          
           {userLogin ? (<div> 
             <div>
-                                <span className='fs-5  text-white fw-bold loginmr'>Welcome ,{userLogin.given_name}</span>
+                                <span className='fs-5  text-white fw-bold '>{userLogin.given_name}</span>
                                 {/* <button className="btn text-white" data-bs-toggle="modal" data-bs-target="#google-sign-in">{}</button> */}
                                 <button className="btn btn-outline-light ms-2"onClick={logout}>
                                   <i className="fa fa-exit" aria-hidden="true"></i>Logout
@@ -115,16 +117,16 @@ function Header(props) {
                               </div>
           </div>): (
                               <div>
-                                <button className="btn text-white loginmr" data-bs-toggle="modal" data-bs-target="#google-sign-in">Login</button>
+                                <button className="btn text-white " data-bs-toggle="modal" data-bs-target="#google-sign-in">Login</button>
                                 <button className="btn btn-outline-light">
                                   <i className="fa fa-search" aria-hidden="true"></i>Create a
                                   Account
                                 </button>  
                               </div>
-          )};
+          )}
         </div>
       </div>
-      </GoogleOAuthProvider>;
+      </GoogleOAuthProvider>
       </>
     );
   }

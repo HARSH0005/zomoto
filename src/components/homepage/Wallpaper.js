@@ -49,7 +49,7 @@ function Wallpaper() {
     <>
       <section className="row main-section align-content-start">
      <div className="col-12">
-      <Header color='' />
+      <Header color=''  />
       </div>
 
         <section className="col-12 d-flex flex-column align-items-center justify-content-center">
@@ -63,7 +63,7 @@ function Wallpaper() {
               className="form-select mb-3 mb-lg-0 w-50 me-lg-3 py-2 px-3 rounded-0"
               onChange={getLocationId}
             >
-              <option value="">Please select a location</option>
+              <option value="">Select a location</option>
               {locationList.map((location, index) => {
                 return (
                   <option value={location.location_id} key={index}>
@@ -72,7 +72,7 @@ function Wallpaper() {
                 );
               })}
             </select>
-            <div className="w-75 input-group">
+            <div className="w-75  input-group">
               <span className="input-group-text bg-white rounded-0">
                 <i className="fa fa-search text-primary"></i>
               </span>
