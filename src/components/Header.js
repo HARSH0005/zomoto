@@ -96,7 +96,7 @@ function Header(props) {
                     <GoogleLogin
                 onSuccess={onSuccess}
                 onError={onError}
-              />;
+              />
       </div>
     </div>
   </div>
